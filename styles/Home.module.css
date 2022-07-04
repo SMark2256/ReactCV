@@ -104,8 +104,18 @@
 }
 
 .logo {
-  height: 1em;
+  height: 4em;
   margin-left: 0.5rem;
+}
+
+.navigation {
+  background-color: rgba(0,0,30,0.85);
+  color: white;
+}
+
+.navigation a {
+
+  padding-left: 6rem;
 }
 
 @media (max-width: 600px) {
