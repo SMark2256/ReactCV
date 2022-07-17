@@ -1,5 +1,4 @@
-
-export default function Home() {
+const Home = () => {
   return (
     <div>
       <h1 className='font-bold text-5xl pb-5'>Home</h1>
@@ -7,3 +6,6 @@ export default function Home() {
     </div>
   )
 }
+
+
+export default Home
