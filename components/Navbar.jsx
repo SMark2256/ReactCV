@@ -12,7 +12,7 @@ const NavLink = ({to, children}) => {
 const NavBarMode = ({ stylemode, onClick }) => {
 
     const desktopMode = "mx-4 rounded-xl bg-cyan-500 shadow-lg shadow-cyan-500/50 hover:bg-cyan-600 duration-200 text-white font-semibold py-2 px-4"
-    const mobileMode = "text-3xl text-center font-semibold my-2 hover:bg-slate-700 w-56 rounded-full"
+    const mobileMode = "text-3xl text-center text-white font-semibold my-2 bg-cyan-500 hover:bg-cyan-600 w-auto rounded-full"
 
     switch (stylemode) {
         case 'mobile':
@@ -61,7 +61,7 @@ const Navbar = () => {
         <nav className="flex filter drop-shadow-md bg-slate-900 px-4 py-4 h-20 items-center">
             <MobileNav open={open} setOpen={setOpen}/>
             <div className="w-3/12 flex items-center">
-            <NavLink to="/"><Image className="text-2xl font-semibold" src="/logo.svg" href="/" width={80} height={80}/></NavLink>
+            <NavLink to="/"><Image className={'text-2xl font-semibold'} src="/logo.svg" href="/" width={80} height={80}/></NavLink>
             </div>
             <div className="w-9/12 flex justify-end items-center">
 
