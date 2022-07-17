@@ -3,12 +3,12 @@ import Navbar from "./Navbar.jsx";
 
 const Layout = ({ children}) => {
       return ( 
-            <div className="content">
+            <div className="text-white">
                   <Navbar />
                   <div className='text-center text-4xl py-20'>{ children }</div>
                   <Footer />
             </div>
-       );
+       )
 }
  
 export default Layout;
