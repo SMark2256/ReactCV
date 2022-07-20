@@ -3,7 +3,7 @@ import Navbar from "./Navbar.jsx";
 
 const Layout = ({ children}) => {
       return ( 
-            <div className="text-white">
+            <div className="text-white w-full">
                   <Navbar />
                   <div className='text-center text-4xl py-20'>{ children }</div>
                   <Footer />
