@@ -1,4 +1,4 @@
-import { showWorkElements } from "../utilities/WorksElements";
+import { showWorkElements } from "./utilities/WorksElements";
 
 const Works = () => {
         return (
