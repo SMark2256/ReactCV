@@ -41,13 +41,12 @@ const Connect_apiList = () => {
 
 
       return (
-    <ul className='w-auto mx-auto flex inline-flex flex-col'>
-      <h1>API List</h1>
-      <div>
-            {resultList}
-      </div>
-    </ul>
-
+        <ul className='w-auto mx-auto flex inline-flex flex-col'>
+          <h1>API List</h1>
+          <div>
+                {resultList}
+          </div>
+        </ul>
       )
 }
  

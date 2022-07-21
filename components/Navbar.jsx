@@ -28,7 +28,7 @@ const NavBarMode = ({ stylemode, onClick }) => {
 
     return (
         <>
-            <NavLink to="/works">
+            <NavLink to="/workspage">
                     <button className={stylemode} onClick={onClick}>Works</button>
             </NavLink>
             <NavLink to="/about">
