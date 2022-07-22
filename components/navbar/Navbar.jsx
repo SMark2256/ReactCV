@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import NavBarMode from './NavBarMode.jsx'
-import NavLink from './NavLink.jsx'
-import Image from 'next/image'
+import NavBarLogo from './NavBarLogo.jsx'
+import NavBarName from './NavBarName.jsx'
+
 
 const Navbar = () => {
 
@@ -10,11 +11,11 @@ const Navbar = () => {
     const MobileNav = ({open, setOpen}) => {
         return (
             <div className={`absolute top-0 left-0 h-screen w-full  bg-slate-800 transform ${open ? "-translate-x-0" : "-translate-x-full hidden"} transition-transform duration-300 ease-in-out filter drop-shadow-md `}>
-                <div className="flex items-center justify-center filter bg-slate-900 h-20 md:hidden"> {/*logo container*/}
-                <NavLink to="/"><Image className="text-2xl font-semibold" src="/logo.svg" href="/" width={80} height={80} onClick={() => setTimeout(() => {setOpen(!open)}, 100)}/></NavLink>
+                <div className="flex items-center justify-center filter bg-slate-900/30 h-24 md:hidden"> {/*logo container*/}
+                <NavBarLogo src="/logo.svg" onClick={() => setTimeout(() => {setOpen(!open)}, 100)}/>
                 </div>
-                <div className="flex flex-col ml-4 py-16">
-                    <NavBarMode stylemode="mobile" onClick={() => setTimeout(() => {setOpen(!open)}, 100)}/>
+                <div className="flex flex-col bg-slate-500 h-screen w-full absolute left-0 py-16 z-20">
+                    <NavBarMode stylemode="mobile" open={open} onClick={() => setTimeout(() => {setOpen(!open)}, 100)}/>
                 </div>  
             </div>
         )
@@ -23,9 +24,13 @@ const Navbar = () => {
     return (
         <nav className="flex filter drop-shadow-md bg-slate-900/30 rounded-b-lg px-4 py-4 h-24 items-center">
             <MobileNav open={open} setOpen={setOpen}/>
-            <div className="w-3/12 flex items-center">
-            <NavLink to="/"><Image className={'text-2xl font-semibold'} src="/logo.svg" href="/" width={80} height={80}/></NavLink>
+            
+            <div className={open ? "hidden" : "w-3/12 flex items-center" }>
+            <NavBarLogo src="/logo.svg"/>
+            <NavBarName/>
             </div>
+           
+        
             <div className="w-9/12 flex justify-end items-center">
 
                 <div className="z-50 flex relative w-8 h-8 flex-col justify-between items-center md:hidden" onClick={() => {setOpen(!open)}}>
@@ -36,7 +41,7 @@ const Navbar = () => {
                 </div>
 
                 <div className="hidden md:flex">
-                <NavBarMode stylemode="desktop" />
+                <NavBarMode stylemode="desktop" open={open} />
                 </div>
             </div>
         </nav>

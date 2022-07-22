@@ -2,7 +2,7 @@ import { educationElements } from "./EducationsElements.jsx"
 
 const EducationsComp = () => {
         return (
-          <div className="grid grid-rows-4 grid-flow-col">
+          <div>
             {educationElements}
           </div>
         )

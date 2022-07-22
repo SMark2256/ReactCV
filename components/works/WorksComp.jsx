@@ -2,7 +2,7 @@ import { WorkElements } from "./WorksElements";
 
 const WorksComp = () => {
         return (
-          <div>
+          <div className="col-start-1 md:col-start-2">
             {WorkElements}
           </div>
         )
