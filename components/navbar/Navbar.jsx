@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import NavBarMode from './utilities/NavBarMode.jsx'
-import NavLink from './utilities/NavLink.jsx'
+import NavBarMode from './NavBarMode.jsx'
+import NavLink from './NavLink.jsx'
 import Image from 'next/image'
 
 const Navbar = () => {

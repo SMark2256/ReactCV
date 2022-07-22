@@ -1,5 +1,5 @@
 import { motion } from "framer-motion"
-import WorksComp from "../components/WorksComp.jsx"
+import WorksComp from "../components/works/WorksComp.jsx"
 
 const Works = () => {
       return ( 

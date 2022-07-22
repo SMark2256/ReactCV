@@ -1,4 +1,4 @@
-import { WorkElements } from "./utilities/WorksElements";
+import { WorkElements } from "./WorksElements";
 
 const WorksComp = () => {
         return (

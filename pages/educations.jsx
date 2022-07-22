@@ -1,5 +1,5 @@
 import { motion } from "framer-motion"
-import EducationsComp from "../components/EducationsComp.jsx"
+import EducationsComp from "../components/educations/EducationsComp.jsx"
 
 const Educations = () => {
       return ( 

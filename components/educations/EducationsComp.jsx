@@ -1,4 +1,4 @@
-import { educationElements } from "./utilities/EducationsElements.jsx"
+import { educationElements } from "./EducationsElements.jsx"
 
 const EducationsComp = () => {
         return (
