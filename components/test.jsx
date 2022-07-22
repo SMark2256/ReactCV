@@ -1,53 +1,59 @@
-import { useState, useEffect } from 'react';
+ import {useState, useEffect} from 'react';
 
-const Connect_apiList = () => {
-  const [apiList, setApiList] = useState([]);
-  const [apiListLoading, setApiListLoading] = useState(true);
-  const [apiListError, setApiListError] = useState(false);
+const TestComp = () => {
+  const [countryList, setCountryList] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
 
+
+  
   useEffect(() => {
     const fetchData = async () => {
+      setLoading(true);
+      setError(null);
+
       try {
-        const response = await fetch("https://restcountries.com/v3.1/region/europe");
-        const data = await response.json();
-        setApiList(data);
-        setApiListLoading(false);
-        console.log(data)
+        const result = await fetch(
+            "https://restcountries.com/v3.1/region/europe"
+            );
+        const data = await result.json();
+        setCountryList(data);
       } catch (error) {
-        setApiListError(true);
-        setApiListLoading(false);
+        setError(error);
       }
+
+      setLoading(false);
     };
+
     fetchData();
   }, []);
 
-  if (apiListLoading) {
-    return <div>Loading...</div>;
+  if (loading) {
+    return <p>Loading...</p>;
   }
 
-  if (apiListError) {
-    return <div>Error...</div>;
+  if (error) {
+    return <p>Error: {error.message}</p>;
   }
 
-  const resultList = apiList.map((api) => {
-      return(
-                  <li key={api.name.common} className='flex inline-flex flex-col text-center align-middle h-56 w-96 border-2  items-center'>
-                  <p>{api.name.common}</p>
-                  <p className='text-cyan-500'>{api.region}</p>
-                  <img src={api.flags.png} className='h-24 w-40 align-middle justify-center'/>
-                  </li>
-            )
-      })
+  return (
+      <div>
+      {countryList.map((country) => (
+      
+            <div className="country-list inline-flex flex-col w-56 h-44 border-2">
+                  <div key={country.name}>
+                        <p>{country.name.common}</p>
+                  <p>{country.region}</p>
+                  </div>
+            </div>
+      
+      ))}
+      </div>
+    
+  );
+  
 
-
-      return (
-        <ul className='w-auto mx-auto flex inline-flex flex-col'>
-          <h1>API List</h1>
-          <div>
-                {resultList}
-          </div>
-        </ul>
-      )
 }
- 
-export default Connect_apiList;
+
+
+export default TestComp

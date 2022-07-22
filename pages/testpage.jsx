@@ -1,8 +1,8 @@
-import Connect_apiList from "../components/test.jsx"
+import TestComp from "../components/test.jsx"
 
 const testpage = () => {
       return ( 
-            <Connect_apiList/>
+            <TestComp/>
        );
 }
  
