@@ -26,7 +26,7 @@ const NavBarMode = ({ stylemode, onClick, open }) => {
                       <button className={stylemode} onClick={onClick}>Tanulmányaim</button>
               </NavLink>
               <NavLink to="/about">
-                      <button className={stylemode} onClick={onClick}>Rólam</button>
+                      <button className={stylemode} onClick={onClick}>Magamról</button>
               </NavLink>
               <NavLink to="/contact">
                       <button className={stylemode} onClick={onClick}>Elérhetőség</button>
