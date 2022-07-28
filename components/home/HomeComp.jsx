@@ -8,8 +8,8 @@ const HomeComp = () => {
 
       return ( 
             <div className='align-middle items-center'>
-                  <h1 className=''>{welcome_HU.name}</h1>
-                  <h2 className=''>{currentAge} éves {welcome_HU.profession} vagyok {welcome_HU.liveAt}ról</h2>
+                  <h1 className='font-bold'>{welcome_HU.name}</h1>
+                  <h2 className='font-semibold text-slate-400'>{currentAge} éves {welcome_HU.profession} vagyok {welcome_HU.liveAt}ról</h2>
                   {/* <Image src={welcome_HU.image} height={400} width={200} /> */}
             </div>
        );

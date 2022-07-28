@@ -33,6 +33,8 @@ export const workListElements_HU = [
     end: "Jelenleg"
   },
     ]
+
+    
 export const workListElements_ENG = [
       {
         id: 1,
