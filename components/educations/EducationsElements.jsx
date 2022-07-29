@@ -7,7 +7,7 @@ const EducationElements = ({ education }) => {
                               <h1 className=" text-2xl justify-end font-bold bg-teal-500/30 w-full rounded-t-2xl">{education.start} <strong>-</strong> {education.end}</h1>     
                             <div className="align-middle items-center justify-center py-3">
                               <div className="text-center">
-                                <a className="font-bold text-base w-auto" href={education.url} target="_blank">{education.school}</a>
+                                <a className="font-bold text-base w-auto" href={education.url} rel="noreferrer" target="_blank">{education.school}</a>
                                 <p className="text-base font-semibold text-slate-400">{education.level}</p> 
                               </div>
                               {education.techonology &&

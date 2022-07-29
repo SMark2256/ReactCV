@@ -3,7 +3,7 @@ import { workListElements_ENG, workListElements_HU } from "../../store/works_dat
 
 const WorksComp = () => {
   return (
-          workListElements_HU.map(work => <WorkElements work={ work }/> )
+          workListElements_HU.map((work, index) => <WorkElements key={index} work={ work }/> )
   )
 }
  

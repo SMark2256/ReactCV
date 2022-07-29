@@ -3,7 +3,7 @@ import { educationListElements_HU, educationListElements_ENG } from "../../store
 
 const EducationsComp = () => {
   return(
-    educationListElements_HU.map(education => <EducationElements education={education}/>)
+    educationListElements_HU.map((education,index) => <EducationElements key={index} education={education}/>)
   )
 }
  
