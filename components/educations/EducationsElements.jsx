@@ -3,8 +3,8 @@ import EducationsIconChanger from "./EducationsIconChanger";
 
 const EducationElements = ({ education }) => {
       return (
-                          <div className="relative cursor-pointer inline-flex flex-col space-y-4 border-cyan-900 bg-cyan-900/30 hover:bg-teal-800/30 hover:border-teal-500/50 hover:shadow-teal-500/40 shadow-xl shadow-black-500/80 rounded-3xl mx-5 w-96 md:flex-auto h-64 mb-10">
-                              <h1 className=" text-3xl justify-end font-bold bg-blue-800/30 w-full rounded-t-2xl">{education.start} <strong>-</strong> {education.end}</h1>     
+                          <div className="relative cursor-pointer inline-flex flex-col  space-y-4 border-cyan-900 bg-cyan-900/30 hover:bg-teal-800/30 hover:border-teal-500/50 hover:shadow-teal-500/40 shadow-xl shadow-black-500/80 rounded-3xl mx-5 w-96 md:flex-auto h-64 mb-10">
+                              <h1 className=" text-2xl justify-end font-bold bg-teal-500/30 w-full rounded-t-2xl">{education.start} <strong>-</strong> {education.end}</h1>     
                             <div className="align-middle items-center justify-center py-3">
                               <div className="text-center">
                                 <a className="font-bold text-base w-auto" href={education.url} target="_blank">{education.school}</a>

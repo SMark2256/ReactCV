@@ -7,7 +7,7 @@ const Educations = () => {
                   <div>
                         <h1 className='font-bold text-5xl pb-5'>  Tanulmányaim </h1>
                   </div> 
-                  <section className="items-center align-middle flex-wrap">
+                  <section className="items-center align-middle">
                         <EducationsComp/>
                   </section>
             </div>
