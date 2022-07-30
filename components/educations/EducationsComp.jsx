@@ -3,7 +3,11 @@ import { educationListElements_HU, educationListElements_ENG } from "../../store
 
 const EducationsComp = () => {
   return(
-    educationListElements_HU.map((education,index) => <EducationElements key={index} education={education}/>)
+    <>
+      <div className="flex flex-col-reverse"> 
+        {educationListElements_HU.map((education,index) => <EducationElements key={index} education={education}/>)}
+      </div>
+    </>
   )
 }
  

@@ -1,12 +1,12 @@
-import { DiReact, DiJsBadge, DiPhp, DiNodejsSmall, DiCss3, DiBootstrap, DiGithubBadge, DiMysql, DiHtml5 } from "react-icons/di"
+import { DiReact, DiDrupal, DiJavascript1, DiPhp, DiNodejsSmall, DiCss3, DiBootstrap, DiGithubBadge, DiMysql, DiHtml5 } from "react-icons/di"
+import { TbCSharp, TbApi} from "react-icons/tb"
 
-
-export const IconChanger = (icon) => {
+const IconSwitch = (icon) => {
   switch (icon) {
     case "REACT":
       return <DiReact />
     case "JS":
-      return <DiJsBadge />
+      return <DiJavascript1 />
     case "PHP":
       return <DiPhp />
     case "NODE":
@@ -21,7 +21,30 @@ export const IconChanger = (icon) => {
       return <DiMysql />
     case "HTML":
       return <DiHtml5 />
+    case "C#":
+      return <TbCSharp />
+    case "API":
+      return <TbApi />
+    case "Drupal":
+      return <DiDrupal />
     default:
       return ""
   }
 }
+
+
+const IconChanger = ({ icon }) => {
+
+  const technologyIcons = icon.split("-")
+  const techResult = []
+
+  for (const elements of technologyIcons) {
+        techResult.push(IconSwitch(elements))
+  }
+
+  return (
+        techResult
+  )
+}
+
+export default IconChanger

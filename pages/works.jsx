@@ -8,7 +8,7 @@ const Works = () => {
                         <div >
                               <h1 className='font-bold text-5xl pb-5'> Tapasztalataim </h1>
                         </div> 
-                        <section className="items-center align-middle flex-wrap">
+                        <section className="items-center align-middle flex flex-col">
                               <WorksComp/>
                         </section>
                   </div>

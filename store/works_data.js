@@ -3,7 +3,7 @@ export const workListElements_HU = [
     id: 1,
     position: "Webshop Adminisztrátor",
     description: "",
-    techonology: "Drupal",
+    techonology: "Drupal-SQL",
     company: "MEDIAJAM KFT.",
     location: "Budaörs, Magyarország",
     url: "http://mediajam.hu/",
@@ -25,7 +25,7 @@ export const workListElements_HU = [
     id: 3,
     position: "Webfejlesztő",
     description: "A vállalat intranet felületének bővítése, modernizálása - SQL lekérdezések írása - Adatvizualizálás Power BI al - Gyártásfejlesztés - Projektek levezénylése és Projekt terv készítése - Kapcsolattartás külsős projekt résztvevővel - Kisebb Rendszerüzemeltetési feladatok ellátása - Munkatársak informatikai támogatása",
-    techonology: "PHP-SQL-CSS-JS-REACT",
+    techonology: "PHP-SQL-CSS-BOOTSTRAP-JS-REACT",
     company: "Magyarmet Finomöntödei KFT.",
     location: "Bicske, Magyarország",
     url: "www.magyarmet.com",
@@ -68,5 +68,5 @@ export const workListElements_ENG = [
         url: "www.magyarmet.com",
         start: "2020/10",
         end: "Jelenleg"
-      },
+      },  
     ]

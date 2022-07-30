@@ -21,7 +21,7 @@ const Navbar = () => {
       }
 
     return (
-        <nav className="flex filter drop-shadow-md bg-slate-900/30 rounded-b-lg px-4 py-4 h-24 items-center">
+        <nav className="flex filter drop-shadow-md bg-slate-900/40 rounded-b-lg px-4 h-24 align-middle">
             <MobileNav open={open} setOpen={setOpen}/>
             
             <div className={open ? "hidden" : "w-3/12 flex items-center" }>
