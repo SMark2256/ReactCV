@@ -9,7 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "file-saver": "^2.0.5",
     "framer-motion": "^6.5.1",
+    "fs": "^0.0.1-security",
     "gh-deploy": "^0.2.3",
     "next": "12.2.0",
     "react": "18.2.0",
