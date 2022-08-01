@@ -2,6 +2,7 @@ import { useState } from 'react'
 import NavBarMode from './NavBarMode.jsx'
 import NavBarLogo from './NavBarLogo.jsx'
 import NavBarName from './NavBarName.jsx'
+import DarkLight from './DarkLight.jsx'
 
 
 const Navbar = () => {
@@ -41,6 +42,9 @@ const Navbar = () => {
 
                 <div className="hidden lg:flex">
                 <NavBarMode stylemode="desktop" open={open} />
+                </div>
+                <div>
+                    <DarkLight/>
                 </div>
             </div>
         </nav>

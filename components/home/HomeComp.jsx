@@ -1,6 +1,7 @@
 import Image from 'next/image'
-import { welcome_HU } from '../../store/welcome_data';
-import { saveAs } from "file-saver";
+import { welcome_HU } from '../../store/welcome_data'
+import { saveAs } from "file-saver"
+import pdf from './help.pdf'
 
 //import downloadFile from '../../utility/downloadPDF';
 
@@ -11,7 +12,7 @@ const HomeComp = () => {
 
       const saveFile = () => {
             saveAs(
-              "./dummy.pdf",
+              pdf,
               "help.pdf"
             );
           };
@@ -27,7 +28,7 @@ const HomeComp = () => {
                   <h1 className='font-bold'>{welcome_HU.name}</h1>
                   <h2 className='font-semibold text-slate-400 pb-10'>{currentAge} éves {welcome_HU.profession} vagyok {welcome_HU.liveAt}ról</h2>
                   {/* <Image src={welcome_HU.image} height={400} width={200} /> */}
-                  {/* <button className='mx-4 rounded-xl bg-cyan-500 shadow-lg shadow-cyan-500/30 hover:bg-teal-600 hover:shadow-teal-700 duration-200 text-white font-semibold py-2 px-4' onClick={downloadPDF}>Önéletrajz Letöltés</button> */}
+                  <button className='mx-4 rounded-xl bg-cyan-500 shadow-lg shadow-cyan-500/30 hover:bg-teal-600 hover:shadow-teal-700 duration-200 text-white font-semibold py-2 px-4' onClick={saveFile}>Önéletrajz Letöltés</button>
             </div>
        );
 }
