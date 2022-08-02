@@ -43,3 +43,10 @@ a {
   ::-webkit-scrollbar-thumb:hover {
     background: rgba(180,180,180, 0.1); 
   }
+
+  @media screen and (max-width: 768px) {
+    ::-webkit-scrollbar {
+      width: 0px;
+    }
+  }
+    
