@@ -16,7 +16,7 @@ const Navbar = () => {
                 <motion.div className="flex flex-col items-center top-24 absolute h-screen w-full z-20 lg:hidden"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ duration: 0.3 }}>
+                transition={{ duration: 0.1 }}>
                     <NavBarMode stylemode="mobile" open={open} onClick={() => setTimeout(() => {setOpen(!open)}, 100)}/>
                 </motion.div>  
             </div>
@@ -27,7 +27,7 @@ const Navbar = () => {
         <nav className="flex filter drop-shadow-md bg-slate-900/40 rounded-b-lg px-4 h-24 lg:w-5/6 align-middle mx-auto">
             <MobileNav open={open} setOpen={setOpen}/>
             
-            <div className="w-3/12 flex items-center">
+            <div className="w-3/12 flex items-center" onClick={() => {setOpen(false)}}>
             <NavBarLogo src="/logo.svg"/>
             <NavBarName/>
             </div>
