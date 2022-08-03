@@ -14,8 +14,8 @@ const Navbar = () => {
             <div className={`absolute top-0 left-0 h-screen w-full  bg-slate-900/40 transform ${open ? "-translate-x-0" : "-translate-x-full hidden"} transition-transform duration-300 ease-in-out filter drop-shadow-md `}>
       
                 <motion.div className="flex flex-col items-center top-24 absolute h-screen w-full z-20 lg:hidden"
-                initial={{ x: '-100vw' }}
-                animate={{ x: 0 }}>
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}>
                     <NavBarMode stylemode="mobile" open={open} onClick={() => setTimeout(() => {setOpen(!open)}, 100)}/>
                 </motion.div>  
             </div>
