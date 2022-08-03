@@ -16,7 +16,7 @@ const Navbar = () => {
                 <motion.div className="absolute top-24 items-center text-center w-full"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{duration: 0.3}}>
+                transition={{duration: 0.1}}>
                     <NavBarMode stylemode="mobile" open={open} onClick={() => setTimeout(() => {setOpen(!open)})}/>
                 </motion.div>  
             </div>
