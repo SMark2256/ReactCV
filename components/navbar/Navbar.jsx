@@ -15,7 +15,8 @@ const Navbar = () => {
       
                 <motion.div className="flex flex-col items-center top-24 absolute h-screen w-full z-20 lg:hidden"
                 initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}>
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.3 }}>
                     <NavBarMode stylemode="mobile" open={open} onClick={() => setTimeout(() => {setOpen(!open)}, 100)}/>
                 </motion.div>  
             </div>
