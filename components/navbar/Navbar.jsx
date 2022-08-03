@@ -24,7 +24,7 @@ const Navbar = () => {
       }
 
     return (
-        <nav className="flex filter drop-shadow-md bg-slate-900/40 rounded-b-lg px-4 h-24 lg:w-5/6 align-middle mx-auto z-50">
+        <nav className="flex filter drop-shadow-md bg-slate-900/40 lg:rounded-b-xl px-4 h-24 lg:w-5/6 align-middle mx-auto z-50">
             <MobileNav open={open} setOpen={setOpen}/>
             
             <div className="w-3/12 flex items-center" onClick={() => {setOpen(false)}}>
@@ -33,7 +33,7 @@ const Navbar = () => {
             </div>
 
             <div className="w-9/12 flex justify-end items-center">
-                <div className="z-50 flex absolute right-20 w-8 h-8 flex-col justify-between items-center lg:hidden" onClick={() => {setOpen(!open)}}>
+                <div className="z-50 flex absolute right-20 w-8 h-8 flex-col justify-between items-center lg:hidden cursor-pointer" onClick={() => {setOpen(!open)}}>
                     {/* hamburger button */}
                     <span className={`h-2 w-full bg-cyan-500 shadow-lg shadow-cyan-500/80 rounded-lg transform transition duration-200 ease-in-out ${open ? "rotate-45 translate-y-3.5" : ""}`} />
                     <span className={`h-2 w-full bg-cyan-500 shadow-lg shadow-cyan-500/80 rounded-lg transition-all duration-200 ease-in-out ${open ? "w-0" : "w-full"}`} />
