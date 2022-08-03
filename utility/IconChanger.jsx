@@ -32,7 +32,6 @@ const IconSwitch = (icon) => {
   }
 }
 
-
 const IconChanger = ({ icon }) => {
 
   const technologyIcons = icon.split("-")
