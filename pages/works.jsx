@@ -7,7 +7,7 @@ const Works = () => {
             <>
                   <PageMotion>
                         <div >
-                              <h1 className='font-bold text-5xl pb-5'> Tapasztalataim </h1>
+                              <h1 className='font-bold text-3xl lg:text-5xl pb-10 lg:pb-20 underline'> Tapasztalataim </h1>
                         </div> 
                         <section className="items-center align-middle flex flex-col">
                               <WorksComp/>
