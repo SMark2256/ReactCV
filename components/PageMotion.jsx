@@ -8,7 +8,7 @@ const PageMotion = ({ children }) => {
             controls.start({
                   opacity: 1,
                   x: 0,
-                  transition: { type: "spring", duration: 1, bounce: 0.3  },
+                  transition: { type: "spring", duration: 1, bounce: 0.5  },
                 })
       }, [])
 

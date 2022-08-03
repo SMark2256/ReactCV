@@ -8,7 +8,7 @@ const Layout = ({ children }) => {
             <div className="text-white mx-auto h-screen overflow-x-hidden">
                   <ThemeProvider>
                         <Navbar />
-                              <div className='text-center text-lg md:text-2xl xl:text-4xl py-10 z-10 dark:bg-cyan-900'>{ children }</div>
+                              <div className='text-center text-lg md:text-2xl xl:text-4xl py-14 z-10 dark:bg-cyan-900'>{ children }</div>
                   </ThemeProvider>
             </div>
        )
