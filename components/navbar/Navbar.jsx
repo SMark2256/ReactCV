@@ -11,12 +11,11 @@ const Navbar = () => {
 
     const MobileNav = ({open, setOpen}) => {
         return (
-            <div className={`absolute top-0 left-0 h-screen w-full  bg-slate-900/40 transform ${open ? "-translate-x-0" : "-translate-x-full hidden"} transition-transform duration-300 ease-in-out filter drop-shadow-md `}>
-      
-                <motion.div className="flex flex-col items-center top-24 absolute h-screen w-full z-20 lg:hidden"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.1 }}>
+            <div className={`absolute left-0 top-24 h-screen w-full bg-slate-900/40 md:z-50 ${open ? "" : "-translate-x-full hidden opacity-0"} drop-shadow-md `}>
+                <motion.div className="absolute flex flex-col items-center top-6 h-screen w-full z-20 lg:hidden"
+                initial={[{ opacity: 0}, {y: "-10vw"}]}
+                animate={[{ opacity: 1}, {y: 0}]}
+                transition={{ duration: 0.5 }}>
                     <NavBarMode stylemode="mobile" open={open} onClick={() => setTimeout(() => {setOpen(!open)}, 100)}/>
                 </motion.div>  
             </div>
@@ -24,7 +23,7 @@ const Navbar = () => {
       }
 
     return (
-        <nav className="flex filter drop-shadow-md bg-slate-900/40 rounded-b-lg px-4 h-24 lg:w-5/6 align-middle mx-auto">
+        <nav className="flex filter drop-shadow-md bg-slate-900/40 lg:rounded-b-xl px-4 h-24 lg:w-5/6 align-middle mx-auto z-50">
             <MobileNav open={open} setOpen={setOpen}/>
             
             <div className="w-3/12 flex items-center" onClick={() => {setOpen(false)}}>
