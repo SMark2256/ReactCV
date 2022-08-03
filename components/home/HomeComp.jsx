@@ -25,12 +25,12 @@ const HomeComp = () => {
 
       return (
             <div className='align-middle items-center'>
-                  <h1 className='lg:text-5xl font-bold pb-10'>Üdvözöllek!</h1>
-                  <div className='inline-flex space-x-3 pb-2'>
+                  <h1 className='text-3xl lg:text-5xl font-bold pb-10'>Üdvözöllek!</h1>
+                  <div className='md:flex-col lg:inline-flex text-3xl lg:text-2xl space-x-3 pb-2'>
                         <h1 className='font-bold'>A nevem</h1>
                         <h1 className='font-bold underline'> {welcome_HU.name}</h1>
                   </div>
-                  <div className='text-2xl'>
+                  <div className='lg:text-2xl'>
                         <p className=' text-slate-400 pb-10'>{currentAge} éves {welcome_HU.profession}</p>
                   </div>
                   <div>
