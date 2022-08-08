@@ -4,6 +4,7 @@ import NavBarLogo from './NavBarLogo.jsx'
 import NavBarName from './NavBarName.jsx'
 import DarkLight from './DarkLight.jsx'
 import { motion } from 'framer-motion'
+import NavBarMotion from './NavBarMotion.jsx'
 
 
 const Navbar = () => {
@@ -11,15 +12,16 @@ const Navbar = () => {
 
     const MobileNav = ({open, setOpen}) => {
         return (
-            <div className={`absolute left-0 h-screen w-full  bg-slate-900/40 transform ${open ? "-translate-x-0" : "-translate-x-full hidden"} transition-transform duration-300 ease-in-out filter drop-shadow-md `}>
-      
-                <motion.div className="absolute top-24 items-center text-center w-full"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{duration: 0.1}}>
-                    <NavBarMode stylemode="mobile" open={open} onClick={() => setTimeout(() => {setOpen(!open)})}/>
-                </motion.div>  
-            </div>
+            <>
+                { open && <div className={`absolute left-0 h-screen w-full  bg-slate-900/40 drop-shadow-md `}>
+        
+                    <NavBarMotion>
+                        <div className="absolute top-24 items-center text-center w-full">
+                            <NavBarMode stylemode="mobile" open={open} onClick={() => setOpen(!open)}/>
+                        </div>
+                    </NavBarMotion>  
+                </div>}
+            </>
         )
       }
 
@@ -33,12 +35,19 @@ const Navbar = () => {
             </div>
 
             <div className="w-9/12 flex justify-end items-center">
+                {open == false ?
                 <div className="z-50 flex absolute right-20 w-8 h-8 flex-col justify-between items-center lg:hidden cursor-pointer" onClick={() => {setOpen(!open)}}>
-                    {/* hamburger button */}
-                    <span className={`h-2 w-full bg-cyan-500 shadow-lg shadow-cyan-500/80 rounded-lg transform transition duration-200 ease-in-out ${open ? "rotate-45 translate-y-3.5" : ""}`} />
-                    <span className={`h-2 w-full bg-cyan-500 shadow-lg shadow-cyan-500/80 rounded-lg transition-all duration-200 ease-in-out ${open ? "w-0" : "w-full"}`} />
-                    <span className={`h-2 w-full bg-cyan-500 shadow-lg shadow-cyan-500/80 rounded-lg transform transition duration-200 ease-in-out ${open ? "-rotate-45 -translate-y-2.5" : ""}`} />
-                </div>
+                    {/* hamburger button closed*/}
+                    <span className={`h-2 w-full bg-cyan-500 shadow-lg shadow-cyan-500/80 rounded-lg`} />
+                    <span className={`h-2 w-full bg-cyan-500 shadow-lg shadow-cyan-500/80 rounded-lg`} />
+                    <span className={`h-2 w-full bg-cyan-500 shadow-lg shadow-cyan-500/80 rounded-lg`} />
+                </div> : 
+                <div className="z-50 flex absolute right-20 w-8 h-8 flex-col justify-between items-center lg:hidden cursor-pointer" onClick={() => {setOpen(!open)}}>
+                    {/* hamburger button opened*/}
+                    <span className={`h-2 w-full bg-cyan-500 shadow-lg shadow-cyan-500/80 rounded-lg transform rotate-45 translate-y-3.5`} />
+                    <span className={`h-2 w-0 bg-cyan-500 shadow-lg shadow-cyan-500/80 rounded-lg`} />
+                    <span className={`h-2 w-full bg-cyan-500 shadow-lg shadow-cyan-500/80 rounded-lg tranform -rotate-45 -translate-y-2.5`} />
+                </div>}
                 <div className="hidden lg:flex absolute right-14">
                 <NavBarMode stylemode="desktop" open={open} />
                 </div>

@@ -8,13 +8,13 @@ const PageMotion = ({ children }) => {
             controls.start({
                   opacity: 1,
                   x: 0,
-                  transition: { type: "spring", duration: 1, bounce: 0.5  },
+                  transition: { type: "spring", duration: 1.2, bounce: 0.4 },
                 })
       }, [])
 
       return (
       <motion.div
-      initial={[{ opacity: 0}, {x: "-20vw"}]}
+      initial={[{ opacity: 0}, {x: "-40vw"}]}
       animate={controls}
       >
             {children}
