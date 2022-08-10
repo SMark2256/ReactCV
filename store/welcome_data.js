@@ -3,5 +3,5 @@ export const welcome_HU = {
       birth: "1996/03/12",
       liveAt: "Magyarország",
       profession: "Webfejlesztő",
-      image: "/mePic.jpg"
+      image: "/mePic2.jpg"
 }

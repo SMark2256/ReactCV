@@ -34,7 +34,7 @@ const HomeComp = () => {
                         <p className=' text-slate-400 pb-10'>{currentAge} éves {welcome_HU.profession}</p>
                   </div>
                   <div className=''>
-                        <Image src={welcome_HU.image} height={300} width={300} className="rounded-full"/> 
+                        <img src={welcome_HU.image} className="object-cover w-80 h-60 lg:w-96 lg:h-72 object-right rounded-full mx-auto border-4 border-cyan-900"/> 
                         {/* <button className='mx-4 rounded-xl bg-cyan-500 shadow-lg shadow-cyan-500/30 hover:bg-teal-600 hover:shadow-teal-700 duration-200 text-white font-semibold py-2 px-4' onClick={saveFile}>Önéletrajz Letöltés</button> */}
                   </div>
             </div>
