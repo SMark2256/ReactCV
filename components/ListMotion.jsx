@@ -1,7 +1,5 @@
-import { motion, useAnimationControls } from "framer-motion"
+import { motion, useAnimationControls } from 'framer-motion';
 
-const ListMotion = ({ children }) => {
+const ListMotion = ({ children }) => {};
 
-}
-
-export default ListMotion
+export default ListMotion;

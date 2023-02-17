@@ -1,17 +1,14 @@
-import { IconChanger } from "../../utility/IconChanger"
+import { IconChanger } from '../../utility/IconChanger';
 
 const EducationsIconChanger = ({ educationIcon }) => {
+    const technologyIcons = educationIcon.split('-');
+    const techResult = [];
 
-      const technologyIcons = educationIcon.split("-")
-      const techResult = []
+    for (const elements of technologyIcons) {
+        techResult.push(IconChanger(elements));
+    }
 
-      for (const elements of technologyIcons) {
-            techResult.push(IconChanger(elements))
-      }
+    return techResult;
+};
 
-      return (
-            techResult
-      )
-}
-
-export default EducationsIconChanger
+export default EducationsIconChanger;

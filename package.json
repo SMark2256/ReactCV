@@ -9,21 +9,28 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
     "file-saver": "^2.0.5",
     "framer-motion": "^6.5.1",
     "fs": "^0.0.1-security",
     "gh-deploy": "^0.2.3",
     "next": "12.2.0",
     "next-themes": "^0.2.0",
+    "prettier": "^2.8.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.4.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.7",
-    "eslint": "8.19.0",
+    "eslint": "^8.19.0",
     "eslint-config-next": "12.2.0",
+    "eslint-plugin-react": "^7.32.2",
     "postcss": "^8.4.14",
     "tailwindcss": "^3.1.6"
-  }
+  },
+  "lint": "eslint .",
+  "lint:fix": "eslint --fix",
+  "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
 }
