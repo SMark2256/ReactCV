@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion';
 import EducationsComp from '../components/educations/EducationsComp.jsx';
 import PageMotion from '../components/PageMotion.jsx';
 

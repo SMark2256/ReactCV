@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion';
 import PageMotion from '../components/PageMotion.jsx';
 import WorksComp from '../components/works/WorksComp.jsx';
 
