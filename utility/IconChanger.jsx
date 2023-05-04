@@ -15,29 +15,29 @@ import { TbBrandCSharp, TbApi } from 'react-icons/tb';
 const IconSwitch = icon => {
     switch (icon) {
         case 'REACT':
-            return <DiReact />;
+            return <DiReact /> || '';
         case 'JS':
-            return <DiJavascript1 />;
+            return <DiJavascript1 /> || '';
         case 'PHP':
-            return <DiPhp />;
+            return <DiPhp /> || '';
         case 'NODE':
-            return <DiNodejsSmall />;
+            return <DiNodejsSmall /> || '';
         case 'CSS':
-            return <DiCss3 />;
+            return <DiCss3 /> || '';
         case 'BOOTSTRAP':
-            return <DiBootstrap />;
+            return <DiBootstrap /> || '';
         case 'GITHUB':
-            return <DiGithubBadge />;
+            return <DiGithubBadge /> || '';
         case 'SQL':
-            return <DiMysql />;
+            return <DiMysql /> || '';
         case 'HTML':
-            return <DiHtml5 />;
+            return <DiHtml5 /> || '';
         case 'C#':
-            return <TbBrandCSharp />;
+            return <TbBrandCSharp /> || '';
         case 'API':
-            return <TbApi />;
+            return <TbApi /> || '';
         case 'Drupal':
-            return <DiDrupal />;
+            return <DiDrupal /> || '';
         default:
             return '';
     }
