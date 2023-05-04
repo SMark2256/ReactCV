@@ -1,14 +1,14 @@
-import Layout from '../components/Layout'
-import '../styles/globals.css'
-
-
+import Layout from '../components/Layout';
+import '../styles/globals.css';
+import { Analytics } from '@vercel/analytics/react';
 
 const MyApp = ({ Component, pageProps }) => {
-  return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
-  )
-}
+    return (
+        <Layout>
+            <Component {...pageProps} />
+            <Analytics />
+        </Layout>
+    );
+};
 
-export default MyApp
+export default MyApp;
