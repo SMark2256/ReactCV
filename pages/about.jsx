@@ -23,26 +23,26 @@ const About = () => {
                     />
                 </div>
             </div> */}
-            <figure class="mt-10 md:flex bg-slate-900 w-[60rem] mx-auto rounded-xl p-8 md:p-0 dark:bg-slate-800">
+            <figure className="mt-10 md:flex bg-slate-900 w-[60rem] mx-auto rounded-xl p-8 md:p-0 dark:bg-slate-800">
                 <div
-                    class={`md:w-[40rem] bg-[url('/mePic2.jpg')] bg-contain bg-no-repeat bg-center`}>
+                    className={`md:w-[40rem] bg-[url('/mePic2.jpg')] bg-contain bg-no-repeat bg-center`}>
                     {/* <img
-                        class="w-24 h-24 md:w-auto md:h-auto md:rounded-none rounded-full mx-auto"
+                        className="w-24 h-24 md:w-auto md:h-auto md:rounded-none rounded-full mx-auto"
                         src={welcome_HU.image}
                         alt="prof"
                     /> */}
                 </div>
-                <div class="pt-1 md:p-2 text-center md:text-left space-y-4 flex flex-col justify-between">
+                <div className="pt-1 md:p-2 text-center md:text-left space-y-4 flex flex-col justify-between">
                     <blockquote>
-                        <p class="text-2xl font-medium mb-auto">
+                        <p className="text-2xl font-medium mb-auto">
                             “Tailwind CSS is the only framework that I've seen scale on large teams.
                             It’s easy to customize, adapts to any design, and the build size is
                             tiny.”
                         </p>
                     </blockquote>
-                    <figcaption class="font-medium text-lg">
-                        <div class="text-sky-500 dark:text-sky-400">Scridon-Siklódi Márk</div>
-                        <div class="text-slate-700 dark:text-slate-500">Webfejlesztő</div>
+                    <figcaption className="font-medium text-lg">
+                        <div className="text-sky-500 dark:text-sky-400">Scridon-Siklódi Márk</div>
+                        <div className="text-slate-700 dark:text-slate-500">Webfejlesztő</div>
                     </figcaption>
                 </div>
             </figure>

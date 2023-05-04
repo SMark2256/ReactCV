@@ -1,20 +1,69 @@
+// {
+//     "env": {
+//         "browser": true,
+//         "es2021": true
+//     },
+//     "extends": [
+//         "next/core-web-vitals",
+//         "plugin:@next/next/recommended"
+//       ],
+//     "overrides": [],
+//     "parserOptions": {
+//         "ecmaVersion": "latest",
+//         "sourceType": "module"
+//     },
+//     "plugins": ["react"],
+//     "rules": {
+//         "react/react-in-jsx-scope": "off",
+//         "react/no-unescaped-entities": "off",
+//         "@next/next/no-page-custom-font": "off"
+//     }
+// }
+// {
+//     "extends": ["eslint:recommended", "plugin:react/recommended"],
+//     "rules": {
+//         "react/no-unescaped-entities": "off"
+//     }
+// }
+// {
+//     "extends": "next",
+//     "rules": {
+//         "react/no-unescaped-entities": "off",
+//         "@next/next/no-page-custom-font": "off"
+//     }
+// }
+
 {
     "env": {
         "browser": true,
-        "es2021": true
+        "es6": true
     },
     "extends": [
         "eslint:recommended",
         "plugin:react/recommended",
-        "plugin:prettier/recommended"
+        "plugin:prettier/recommended",
+        "next/core-web-vitals"
     ],
-    "overrides": [],
     "parserOptions": {
-        "ecmaVersion": "latest",
-        "sourceType": "module"
+        "ecmaVersion": 2018,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
     },
     "plugins": ["react"],
     "rules": {
-        "react/react-in-jsx-scope": "off"
+        "react/prop-types": "off",
+        "react/react-in-jsx-scope": "off",
+        "prettier/prettier": ["error", {}, { "usePrettierrc": true }],
+        "react/no-unescaped-entities": "off",
+        "@next/next/no-img-element": "off",
+        "semi": ["error", "always"],
+        "no-unused-vars": [
+            "warn",
+            { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }
+        ],
+        "react-hooks/exhaustive-deps": "warn",
+        "no-undef": "off"
     }
 }

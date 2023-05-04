@@ -3,7 +3,6 @@ import NavBarMode from './NavBarMode.jsx';
 import NavBarLogo from './NavBarLogo.jsx';
 import NavBarName from './NavBarName.jsx';
 import DarkLight from './DarkLight.jsx';
-import { motion } from 'framer-motion';
 import NavBarMotion from './NavBarMotion.jsx';
 
 const Navbar = () => {

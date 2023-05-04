@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion';
 import IconChanger from '../../utility/IconChanger.jsx';
 
 const EducationElements = ({ education }) => {

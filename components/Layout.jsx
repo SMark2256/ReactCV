@@ -1,4 +1,3 @@
-import Footer from './Footer.jsx';
 import Navbar from './navbar/Navbar.jsx';
 import { ThemeProvider } from 'next-themes';
 
