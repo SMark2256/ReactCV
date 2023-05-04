@@ -2,7 +2,7 @@ import { useState } from 'react';
 import NavBarMode from './NavBarMode.jsx';
 import NavBarLogo from './NavBarLogo.jsx';
 import NavBarName from './NavBarName.jsx';
-import DarkLight from './DarkLight.jsx';
+//import DarkLight from './DarkLight.jsx';
 import NavBarMotion from './NavBarMotion.jsx';
 
 const Navbar = () => {
@@ -81,9 +81,9 @@ const Navbar = () => {
                 <div className="hidden lg:flex absolute right-14">
                     <NavBarMode stylemode="desktop" open={open} />
                 </div>
-                <div className="absolute right-0">
+                {/* <div className="absolute right-0">
                     <DarkLight />
-                </div>
+                </div> */}
             </div>
         </nav>
     );
