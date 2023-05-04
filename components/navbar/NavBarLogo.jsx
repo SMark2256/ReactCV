@@ -1,10 +1,10 @@
 import NavLink from './NavLink';
-import Image from 'next/image';
+// import Image from 'next/image';
 
 const NavBarLogo = ({ src }) => {
     return (
         <NavLink to="/">
-            <Image
+            <img
                 className={'text-2xl font-semibold cursor-pointer'}
                 alt="logo"
                 src={src}
