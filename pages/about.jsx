@@ -23,14 +23,14 @@ const About = () => {
                     />
                 </div>
             </div> */}
-            <figure className="mt-10 md:flex bg-slate-900 w-[60rem] mx-auto rounded-xl p-8 md:p-0 dark:bg-slate-800">
+            {/* <figure className="mt-10 md:flex bg-slate-900 w-[60rem] mx-auto rounded-xl p-8 md:p-0 dark:bg-slate-800">
                 <div
                     className={`md:w-[40rem] bg-[url('/mePic2.jpg')] bg-contain bg-no-repeat bg-center`}>
-                    {/* <img
+                    <img
                         className="w-24 h-24 md:w-auto md:h-auto md:rounded-none rounded-full mx-auto"
                         src={welcome_HU.image}
                         alt="prof"
-                    /> */}
+                    />
                 </div>
                 <div className="pt-1 md:p-2 text-center md:text-left space-y-4 flex flex-col justify-between">
                     <blockquote>
@@ -45,7 +45,7 @@ const About = () => {
                         <div className="text-slate-700 dark:text-slate-500">Webfejlesztő</div>
                     </figcaption>
                 </div>
-            </figure>
+            </figure> */}
         </PageMotion>
     );
 };
