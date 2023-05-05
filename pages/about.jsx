@@ -3,17 +3,31 @@ import PageMotion from '../components/PageMotion';
 const About = () => {
     return (
         <PageMotion>
-            <h1 className="font-bold text-5xl pb-14 underline"> Rólam </h1>
-            <div className="space-y-4 flex flex-col items-center">
-                <div className="inline-flex space-x-10">
-                    <div className="font-bold"> Születtem </div>
-                    <div> Zalaegerszegen 1996 márciusában </div>
-                </div>
-                <div className="inline-flex space-x-10">
-                    <div className="font-bold"> Hobbi </div>
-                    <div> Zene, Gitározás, Fotózgatás, Túrázás, Biciklizés </div>
-                </div>
-            </div>
+            <figure className="mt-10 flex flex-col gap-14 w-[95%] bg-slate-900/50 md:w-[50rem] mx-auto rounded-xl p-10 dark:bg-slate-800">
+                <section>
+                    <h1 className="font-bold text-3xl md:text-5xl underline"> Rólam </h1>
+                </section>
+                <section>
+                    <div className="flex flex-col gap-5 text-sm md:text-xl">
+                        <div className="grid grid-cols-5 gap-5">
+                            <div className="font-bold text-left md:pl-10">Születtem: </div>
+                            <div className="col-span-4"> Zalaegerszegen 1996 márciusában </div>
+                        </div>
+                        <div className="grid grid-cols-5 gap-10">
+                            <div className="font-bold md:col-span-2 text-left md:pl-10">Hobbi:</div>
+                            <ul className="col-span-4 flex flex-col text-left md:col-span-3 list-disc list-inside pl-2">
+                                <li>Tech</li>
+                                <li>Videojáték</li>
+                                <li>Zene</li>
+                                <li>Zenélés</li>
+                                <li>Hobbi Fotózás</li>
+                                <li>Túrázás</li>
+                                <li>Biciklizés</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </figure>
             {/* <div className="group h-96 w-96 [perspective:1000px]">
                 <div className="absolute inset-0">
                     <img
